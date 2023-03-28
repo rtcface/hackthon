@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+
+  hackthon:
+    container_name: mms-cloud
+    image: us-central1-docker.pkg.dev/aawz7sbwh3zujhdpkvgkq8hcxolfj5/media-markt/mms-cloud:v1
+    restart: always  
+    environment:
+      - TZ=America/Mexico_City
+    ports:
+      - 3000:3000
+   
